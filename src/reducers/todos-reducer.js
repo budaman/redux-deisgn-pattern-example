@@ -17,7 +17,6 @@ const initialTodos = [
 ];
 
 const todos = (state = [...initialTodos], action) => {
-  console.log("veikia reduceris");
   switch (action.type) {
     case "ADD_TODO":
       return [

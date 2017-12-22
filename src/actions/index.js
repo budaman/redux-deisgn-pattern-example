@@ -15,3 +15,10 @@ export const addTodo = text => {
     text
   };
 };
+
+export const filter = (action, filter) => {
+  return {
+    type: action,
+    filter
+  };
+};
