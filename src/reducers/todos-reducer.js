@@ -1,3 +1,5 @@
+//default reducers
+
 const initialTodos = [
   {
     id: "1",
@@ -15,6 +17,9 @@ const initialTodos = [
     completed: true
   }
 ];
+
+//all of the reducers has state, and action, state is basicaly state or data
+//and action is madden for changing that data or state
 
 const todos = (state = [...initialTodos], action) => {
   switch (action.type) {
@@ -42,4 +47,4 @@ const todos = (state = [...initialTodos], action) => {
   }
 };
 
-export default todos;
+export default todos;  //exporting only state

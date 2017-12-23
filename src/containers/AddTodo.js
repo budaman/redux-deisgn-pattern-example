@@ -2,6 +2,9 @@ import React from "react";
 import { connect } from "react-redux";
 import { addTodo } from "../actions";
 
+
+//all this container is duing it sends dispatch action to with the new value
+
 let AddTodo = ({ dispatch }) => {
   let input;
 
@@ -9,7 +12,7 @@ let AddTodo = ({ dispatch }) => {
     <div>
       <form
         onSubmit={e => {
-          console.log(input.value);
+
           e.preventDefault();
           if (!input.value.trim()) {
             return;

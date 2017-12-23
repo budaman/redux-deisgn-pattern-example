@@ -1,5 +1,4 @@
 const visibilityFilter = (state = "SHOW_ALL", action) => {
-  console.log(action.filter);
   switch (action.type) {
     case "SET_VISIBILITY_FILTER":
       return action.filter;
@@ -8,4 +7,4 @@ const visibilityFilter = (state = "SHOW_ALL", action) => {
   }
 };
 
-export default visibilityFilter;
+export default visibilityFilter;  //checks if user selects display types and if selects, looks what kind of display type is selected

@@ -1,5 +1,4 @@
-export const toggleTodo = id => {
-  console.log(id);
+  export const toggleTodo = id => {
   return {
     type: "TOGGLE_TODO",
     id
@@ -16,9 +15,9 @@ export const addTodo = text => {
   };
 };
 
-export const filter = (action, filter) => {
+export const setVisibilityFilter =  filter => {
   return {
-    type: action,
+    type: 'SET_VISIBILITY_FILTER',
     filter
   };
 };

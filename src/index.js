@@ -5,6 +5,9 @@ import { createStore } from "redux";
 import todoApp from "./reducers";
 import App from "./components/App";
 
+
+
+//all of the reducers goes to store
 let store = createStore(todoApp);
 
 render(
